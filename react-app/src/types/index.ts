@@ -9,6 +9,7 @@ export type ProductCategory =
 export interface Product {
   id: string;
   name: string;
+  brand: string;
   category: Exclude<ProductCategory, 'all'>;
   description: string;
   price: number;
@@ -16,6 +17,7 @@ export interface Product {
   badgeVariant?: 'default' | 'hot';
   emoji: string;
   details: string;
+  comingSoon?: boolean;
 }
 
 export interface Service {

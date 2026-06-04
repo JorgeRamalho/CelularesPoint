@@ -182,6 +182,10 @@ function initCounterAnimation() {
 }
 
 /* ============================================
+   Product Images — ver js/productImages.js
+   ============================================ */
+
+/* ============================================
    Product Filters
    ============================================ */
 function initProductFilters() {
@@ -220,6 +224,9 @@ const productDetails = {
   'Galaxy S26 Ultra': 'Flagship Samsung com câmera de 200MP, S Pen integrada, tela Dynamic AMOLED 2X de 6.8" e processador Snapdragon 8 Elite. Ideal para produtividade e criação de conteúdo.',
   'iPhone 17 Pro Max': 'O mais avançado iPhone com chip A19 Pro, corpo em titânio, câmeras Pro com zoom óptico 5x e Apple Intelligence integrada. Ecossistema premium completo.',
   'Nothing Phone (3)': 'Design transparente icônico com Glyph Interface, Snapdragon 8 Gen 3 e Nothing OS 3.0. Para quem busca estilo e performance.',
+  'Xiaomi 15 Ultra': 'Flagship Xiaomi com câmera Leica, tela AMOLED 2K 120Hz e carregamento ultrarrápido de 90W.',
+  'Motorola Edge 50 Pro': 'Design premium Motorola com tela pOLED curva 144Hz e resistência IP68.',
+  'Point One Pro': 'O primeiro smartphone da linha Point Celular. Projetado para integrar proteção, performance e o ecossistema Point. Cadastre-se para ser avisado do lançamento.',
   'Spigen Ultra Hybrid': 'Capa híbrida transparente com proteção militar MIL-STD 810G, compatível MagSafe e anti-amarelecimento UV.',
   'Pitaka Aramid': 'Fibra de aramida ultra-leve (17g), apenas 0.8mm de espessura. Proteção premium sem adicionar volume.',
   'UAG Monarch Pro': 'Proteção extrema com Kevlar e estrutura em 5 camadas. Compatível com carregamento wireless.',
@@ -240,13 +247,33 @@ function initProductModal() {
   const title = document.getElementById('modal-title');
   const body = document.getElementById('modal-body');
   const actionBtn = document.getElementById('modal-action');
+  const modalImageWrap = document.getElementById('modal-image-wrap');
+  const modalImage = document.getElementById('modal-image');
+  const modalIllus = document.getElementById('modal-illus');
   const productBtns = document.querySelectorAll('.product-btn');
 
   if (!modal) return;
 
   const openModal = productName => {
+    const imageData = window.PRODUCT_IMAGES?.[productName];
     title.textContent = productName;
     body.textContent = productDetails[productName] || 'Produto premium Point Celular. Entre em contato para mais informações.';
+
+    if (imageData && modalImageWrap && modalImage) {
+      modalImage.src = imageData.src;
+      modalImage.alt = imageData.alt;
+      modalIllus.textContent = `Imagem ilustrativa · ${imageData.brand}`;
+      modalImageWrap.hidden = false;
+    } else if (modalImageWrap) {
+      modalImageWrap.hidden = true;
+    }
+
+    if (imageData?.comingSoon) {
+      actionBtn.textContent = 'Avise-me do lançamento';
+    } else {
+      actionBtn.textContent = 'Solicitar Orçamento';
+    }
+
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';

@@ -253,6 +253,11 @@
           <button class="filter-btn" data-filter="audio" role="tab">Áudio</button>
         </div>
 
+        <p class="produtos__disclaimer" data-animate="fade-up">
+          Fotos meramente ilustrativas para referência visual. Não representam produtos oficiais das marcas.
+          Lançamentos <strong>Point Celular</strong> serão atualizados em <code>assets/images/products/point-celular/</code>.
+        </p>
+
         <div class="produtos__grid" id="produtos-grid">
           <!-- Smartphones -->
           <article class="product-card" data-category="smartphones" data-animate="fade-up">
@@ -297,6 +302,52 @@
               <div class="product-card__footer">
                 <span class="product-card__price">R$ 4.299</span>
                 <button class="btn btn--sm btn--primary product-btn" data-product="Nothing Phone (3)">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="smartphones" data-animate="fade-up">
+            <div class="product-card__image product-card__image--phone">
+              <div class="product-card__placeholder">📱</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Smartphone</span>
+              <h3>Xiaomi 15 Ultra</h3>
+              <p>Leica · Snapdragon 8 Elite · 1" sensor · 90W</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 5.999</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Xiaomi 15 Ultra">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="smartphones" data-animate="fade-up">
+            <div class="product-card__image product-card__image--phone">
+              <div class="product-card__placeholder">📱</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Smartphone</span>
+              <h3>Motorola Edge 50 Pro</h3>
+              <p>pOLED 144Hz · Snapdragon 7 · IP68 · Vegan leather</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 3.499</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Motorola Edge 50 Pro">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card product-card--point" data-category="smartphones" data-animate="fade-up">
+            <div class="product-card__badge">Em breve</div>
+            <div class="product-card__image product-card__image--phone product-card__image--coming-soon">
+              <div class="product-card__placeholder">◈</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Point Celular</span>
+              <h3>Point One Pro</h3>
+              <p>Lançamento exclusivo · IA Point · Design futurista</p>
+              <div class="product-card__footer">
+                <span class="product-card__price product-card__price--soon">Em breve</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Point One Pro">Avise-me</button>
               </div>
             </div>
           </article>
@@ -846,6 +897,10 @@
     <div class="modal__overlay" id="modal-overlay"></div>
     <div class="modal__content">
       <button class="modal__close" id="modal-close" aria-label="Fechar">&times;</button>
+      <div class="modal__image-wrap" id="modal-image-wrap" hidden>
+        <img class="modal__image" id="modal-image" src="" alt="">
+        <span class="modal__illus" id="modal-illus"></span>
+      </div>
       <h3 id="modal-title">Detalhes do Produto</h3>
       <p id="modal-body">Carregando informações...</p>
       <button class="btn btn--primary" id="modal-action">Solicitar Orçamento</button>
@@ -855,6 +910,7 @@
   <!-- Toast -->
   <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
 
+  <script src="js/productImages.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -61,6 +61,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'galaxy-s26',
     name: 'Galaxy S26 Ultra',
+    brand: 'Samsung',
     category: 'smartphones',
     description: '200MP · Snapdragon 8 Elite · 512GB · S Pen integrada',
     price: 8999,
@@ -71,6 +72,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'iphone-17',
     name: 'iPhone 17 Pro Max',
+    brand: 'Apple',
     category: 'smartphones',
     description: 'A19 Pro · Câmera 48MP · Titânio · Apple Intelligence',
     price: 11499,
@@ -80,6 +82,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'nothing-3',
     name: 'Nothing Phone (3)',
+    brand: 'Nothing',
     category: 'smartphones',
     description: 'Glyph Interface · Snapdragon 8 · Design transparente',
     price: 4299,
@@ -87,8 +90,41 @@ export const PRODUCTS: Product[] = [
     details: 'Design transparente icônico com Glyph Interface e Nothing OS 3.0.',
   },
   {
+    id: 'xiaomi-15',
+    name: 'Xiaomi 15 Ultra',
+    brand: 'Xiaomi',
+    category: 'smartphones',
+    description: 'Leica · Snapdragon 8 Elite · 1" sensor · 90W',
+    price: 5999,
+    emoji: '📱',
+    details: 'Flagship Xiaomi com câmera Leica, tela AMOLED 2K 120Hz e carregamento ultrarrápido.',
+  },
+  {
+    id: 'motorola-edge-50',
+    name: 'Motorola Edge 50 Pro',
+    brand: 'Motorola',
+    category: 'smartphones',
+    description: 'pOLED 144Hz · Snapdragon 7 · IP68 · Vegan leather',
+    price: 3499,
+    emoji: '📱',
+    details: 'Design premium Motorola com tela pOLED curva e resistência IP68.',
+  },
+  {
+    id: 'point-one-pro',
+    name: 'Point One Pro',
+    brand: 'Point Celular',
+    category: 'smartphones',
+    description: 'Lançamento exclusivo · IA Point · Design futurista',
+    price: 0,
+    badge: 'Em breve',
+    emoji: '📱',
+    details: 'O primeiro smartphone da linha Point Celular. Projetado para integrar proteção, performance e o ecossistema Point. Cadastre-se para ser avisado do lançamento.',
+    comingSoon: true,
+  },
+  {
     id: 'spigen',
     name: 'Spigen Ultra Hybrid MagFit',
+    brand: 'Spigen',
     category: 'capas',
     description: 'Anti-amarelecimento · MagSafe · MIL-STD 810G',
     price: 189,
@@ -100,6 +136,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'pitaka',
     name: 'Pitaka Aramid Fiber Case',
+    brand: 'Pitaka',
     category: 'capas',
     description: 'Fibra de aramida · 0.8mm · 17g · MagSafe',
     price: 449,
@@ -109,6 +146,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'uag',
     name: 'UAG Monarch Pro',
+    brand: 'UAG',
     category: 'capas',
     description: 'Proteção extrema · Kevlar · Wireless charging',
     price: 379,
@@ -118,6 +156,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'anker-735',
     name: 'Anker 735 GaNPrime 65W',
+    brand: 'Anker',
     category: 'carregadores',
     description: '3 portas · USB-C PD 3.1 · Compacto 38% menor',
     price: 299,
@@ -129,6 +168,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'baseus',
     name: 'Baseus MagSafe 15W Stand',
+    brand: 'Baseus',
     category: 'carregadores',
     description: 'Qi2 certificado · Stand ajustável · LED indicador',
     price: 219,
@@ -138,6 +178,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'anker-maggo',
     name: 'Anker MagGo 10000mAh',
+    brand: 'Anker',
     category: 'carregadores',
     description: 'Qi2 15W · USB-C 30W · Display digital',
     price: 449,
@@ -147,6 +188,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'whitestone',
     name: 'Whitestone Dome Glass',
+    brand: 'Whitestone',
     category: 'peliculas',
     description: 'UV curing · Cobertura total · 9H · Oleofóbico',
     price: 159,
@@ -156,6 +198,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'esr',
     name: 'ESR Privacy Screen Pro',
+    brand: 'ESR',
     category: 'peliculas',
     description: 'Anti-espionagem 28° · Instalação automática',
     price: 129,
@@ -166,6 +209,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'belkin',
     name: 'Belkin UltraGlass 2',
+    brand: 'Belkin',
     category: 'peliculas',
     description: 'Gorilla Glass · Anti-microbial · 2x resistência',
     price: 199,
@@ -175,6 +219,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'buds3',
     name: 'Samsung Galaxy Buds3 Pro',
+    brand: 'Samsung',
     category: 'audio',
     description: 'ANC adaptativo · Hi-Fi 24bit · IP57',
     price: 1299,
@@ -184,6 +229,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'airpods',
     name: 'AirPods Pro 3',
+    brand: 'Apple',
     category: 'audio',
     description: 'ANC 2x · USB-C · Spatial Audio · H2 chip',
     price: 2499,

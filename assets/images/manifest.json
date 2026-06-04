@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "disclaimer": "Imagens meramente ilustrativas. Não representam produtos oficiais das marcas.",
+  "basePath": "assets/images/products",
+  "howToAdd": {
+    "step1": "Salve a foto em assets/images/products/{categoria}/{slug}.jpg",
+    "step2": "Registre em js/productImages.js e react-app/src/data/productImages.ts",
+    "step3": "Para lançamentos Point: use a pasta point-celular/ e badge 'Em breve'"
+  },
+  "products": [
+    {
+      "id": "galaxy-s26",
+      "slug": "samsung-galaxy-s26-ultra",
+      "brand": "Samsung",
+      "category": "smartphones",
+      "image": "assets/images/products/smartphones/samsung-galaxy-s26-ultra.jpg",
+      "alt": "Smartphone Android premium ilustrativo estilo Galaxy"
+    },
+    {
+      "id": "iphone-17",
+      "slug": "apple-iphone-17-pro-max",
+      "brand": "Apple",
+      "category": "smartphones",
+      "image": "assets/images/products/smartphones/apple-iphone-17-pro-max.jpg",
+      "alt": "Smartphone premium ilustrativo estilo iPhone"
+    },
+    {
+      "id": "nothing-3",
+      "slug": "nothing-phone-3",
+      "brand": "Nothing",
+      "category": "smartphones",
+      "image": "assets/images/products/smartphones/nothing-phone-3.jpg",
+      "alt": "Smartphone minimalista ilustrativo"
+    },
+    {
+      "id": "xiaomi-15",
+      "slug": "xiaomi-15-ultra",
+      "brand": "Xiaomi",
+      "category": "smartphones",
+      "image": "assets/images/products/smartphones/xiaomi-15-ultra.jpg",
+      "alt": "Smartphone Android ilustrativo estilo flagship"
+    },
+    {
+      "id": "motorola-edge-50",
+      "slug": "motorola-edge-50-pro",
+      "brand": "Motorola",
+      "category": "smartphones",
+      "image": "assets/images/products/smartphones/motorola-edge-50-pro.jpg",
+      "alt": "Smartphone moderno ilustrativo"
+    },
+    {
+      "id": "point-one-pro",
+      "slug": "point-one-pro-teaser",
+      "brand": "Point Celular",
+      "category": "smartphones",
+      "image": "assets/images/products/point-celular/point-one-pro-teaser.jpg",
+      "alt": "Teaser ilustrativo do futuro lançamento Point One Pro",
+      "status": "coming-soon"
+    },
+    {
+      "id": "spigen",
+      "slug": "spigen-ultra-hybrid",
+      "brand": "Spigen",
+      "category": "capas",
+      "image": "assets/images/products/capas/spigen-ultra-hybrid.jpg",
+      "alt": "Capa protetora para smartphone ilustrativa"
+    },
+    {
+      "id": "pitaka",
+      "slug": "pitaka-aramid",
+      "brand": "Pitaka",
+      "category": "capas",
+      "image": "assets/images/products/capas/pitaka-aramid.jpg",
+      "alt": "Capa slim premium ilustrativa"
+    },
+    {
+      "id": "uag",
+      "slug": "uag-monarch-pro",
+      "brand": "UAG",
+      "category": "capas",
+      "image": "assets/images/products/capas/uag-monarch-pro.jpg",
+      "alt": "Capa rugged ilustrativa"
+    },
+    {
+      "id": "anker-735",
+      "slug": "anker-ganprime-65w",
+      "brand": "Anker",
+      "category": "carregadores",
+      "image": "assets/images/products/carregadores/anker-ganprime-65w.jpg",
+      "alt": "Carregador GaN compacto ilustrativo"
+    },
+    {
+      "id": "baseus",
+      "slug": "baseus-magsafe-stand",
+      "brand": "Baseus",
+      "category": "carregadores",
+      "image": "assets/images/products/carregadores/baseus-magsafe-stand.jpg",
+      "alt": "Base de carregamento wireless ilustrativa"
+    },
+    {
+      "id": "anker-maggo",
+      "slug": "anker-maggo-10000",
+      "brand": "Anker",
+      "category": "carregadores",
+      "image": "assets/images/products/carregadores/anker-maggo-10000.jpg",
+      "alt": "Power bank ilustrativo"
+    },
+    {
+      "id": "whitestone",
+      "slug": "whitestone-dome",
+      "brand": "Whitestone",
+      "category": "peliculas",
+      "image": "assets/images/products/peliculas/whitestone-dome.jpg",
+      "alt": "Película de proteção para tela ilustrativa"
+    },
+    {
+      "id": "esr",
+      "slug": "esr-privacy-pro",
+      "brand": "ESR",
+      "category": "peliculas",
+      "image": "assets/images/products/peliculas/esr-privacy-pro.jpg",
+      "alt": "Película com privacidade ilustrativa"
+    },
+    {
+      "id": "belkin",
+      "slug": "belkin-ultraglass",
+      "brand": "Belkin",
+      "category": "peliculas",
+      "image": "assets/images/products/peliculas/belkin-ultraglass.jpg",
+      "alt": "Vidro temperado ilustrativo"
+    },
+    {
+      "id": "buds3",
+      "slug": "galaxy-buds3-pro",
+      "brand": "Samsung",
+      "category": "audio",
+      "image": "assets/images/products/audio/galaxy-buds3-pro.jpg",
+      "alt": "Fones earbuds TWS ilustrativos"
+    },
+    {
+      "id": "airpods",
+      "slug": "airpods-pro-3",
+      "brand": "Apple",
+      "category": "audio",
+      "image": "assets/images/products/audio/airpods-pro-3.jpg",
+      "alt": "Fones wireless premium ilustrativos"
+    }
+  ]
+}

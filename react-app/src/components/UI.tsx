@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { Product } from '../types';
+import { getProductImage } from '../data/productImages';
 
 interface ProductModalProps {
   product: Product | null;
@@ -19,6 +20,8 @@ export function ProductModal({ product, isOpen, onClose, onRequestQuote }: Produ
 
   if (!product) return null;
 
+  const image = getProductImage(product.id);
+
   return (
     <div className={`modal ${isOpen ? 'active' : ''}`} aria-hidden={!isOpen} role="dialog">
       <div className="modal__overlay" onClick={onClose} />
@@ -26,6 +29,12 @@ export function ProductModal({ product, isOpen, onClose, onRequestQuote }: Produ
         <button className="modal__close" onClick={onClose} aria-label="Fechar">
           &times;
         </button>
+        {image && (
+          <div className="modal__image-wrap">
+            <img className="modal__image" src={image.src} alt={image.alt} />
+            <span className="modal__illus">Imagem ilustrativa · {image.brand}</span>
+          </div>
+        )}
         <h3>{product.name}</h3>
         <p>{product.details}</p>
         <button
