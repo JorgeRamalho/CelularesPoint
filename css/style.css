@@ -848,6 +848,180 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   box-shadow: var(--shadow-card), var(--shadow-glow-purple);
 }
 
+/* --- Flagship Lab --- */
+.flagships {
+  background: linear-gradient(180deg, rgba(123, 47, 247, 0.04) 0%, transparent 50%);
+}
+
+.flagships__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+.flagship-card {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: var(--space-lg);
+  background: var(--color-bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.flagship-card:hover {
+  border-color: rgba(0, 240, 255, 0.25);
+  box-shadow: var(--shadow-card);
+}
+
+.flagship-card--soon {
+  border-color: rgba(123, 47, 247, 0.3);
+}
+
+.flagship-card__media {
+  position: relative;
+  min-height: 220px;
+  background: var(--gradient-subtle);
+}
+
+.flagship-card__media img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+
+.flagship-card__brand {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  padding: var(--space-xs) var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-cyan);
+  background: rgba(6, 8, 15, 0.8);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: var(--radius-sm);
+}
+
+.flagship-card__body {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flagship-card__body h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+.flagship-card__tagline {
+  font-size: 0.9375rem;
+  color: var(--color-cyan);
+  margin-bottom: var(--space-md);
+}
+
+.flagship-card__highlights {
+  margin-bottom: var(--space-lg);
+}
+
+.flagship-card__highlights li {
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  padding: var(--space-xs) 0 var(--space-xs) var(--space-md);
+  position: relative;
+}
+
+.flagship-card__highlights li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--color-purple-light);
+}
+
+.modal__content--deep {
+  max-width: 640px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal__body {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+}
+
+.modal__body p { margin-bottom: var(--space-md); }
+
+.modal__tagline {
+  font-size: 1rem;
+  color: var(--color-cyan) !important;
+  font-weight: 500;
+}
+
+.modal__highlights {
+  margin: var(--space-md) 0 var(--space-lg);
+  padding-left: var(--space-lg);
+}
+
+.modal__highlights li {
+  font-size: 0.875rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-primary);
+}
+
+.modal__specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.modal-spec {
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.modal-spec span {
+  display: block;
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.modal-spec strong {
+  font-size: 0.8125rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.modal__deep-block h4 {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  margin-bottom: var(--space-xs);
+}
+
+.modal__deep-block p {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.modal__deep-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
 .produtos__disclaimer {
   text-align: center;
   font-size: 0.8125rem;
@@ -1639,6 +1813,9 @@ input, select, textarea { font-family: inherit; font-size: inherit; }
   .universo__grid { grid-template-columns: 1fr; }
   .servicos__grid { grid-template-columns: 1fr; }
   .contato__layout { grid-template-columns: 1fr; }
+  .flagships__grid { grid-template-columns: 1fr; }
+  .flagship-card { grid-template-columns: 1fr; }
+  .modal__specs-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .specs__tech-grid { grid-template-columns: repeat(2, 1fr); }
   .footer__grid { grid-template-columns: 1fr; }

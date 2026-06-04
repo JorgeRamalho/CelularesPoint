@@ -39,9 +39,7 @@ export default function Products({ onProductClick }: ProductsProps) {
         </div>
 
         <p className="produtos__disclaimer">
-          Fotos meramente ilustrativas para referência visual. Não representam produtos oficiais das marcas.
-          Lançamentos <strong>Point Celular</strong> em{' '}
-          <code>assets/images/products/point-celular/</code>.
+          Fotos de referência de produtos reais. Cada imagem representa visualmente a linha indicada — Galaxy Ultra, iPhone Pro, Nothing Glyph e demais flagships de alta tecnologia.
         </p>
 
         <div className="produtos__grid">

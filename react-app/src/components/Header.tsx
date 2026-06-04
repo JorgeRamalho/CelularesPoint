@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NAV_LINKS } from '../data/siteData';
 import { useHeaderScroll, useActiveSection } from '../hooks/useScrollAnimation';
 
-const SECTION_IDS = ['hero', 'universo', 'produtos', 'tecnologia', 'servicos', 'depoimentos', 'faq', 'contato'];
+const SECTION_IDS = ['hero', 'universo', 'produtos', 'flagships', 'tecnologia', 'servicos', 'depoimentos', 'faq', 'contato'];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

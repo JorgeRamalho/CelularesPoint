@@ -2,6 +2,7 @@ export interface ProductImageMeta {
   src: string;
   alt: string;
   brand: string;
+  caption?: string;
   comingSoon?: boolean;
 }
 
@@ -9,34 +10,40 @@ export interface ProductImageMeta {
 export const PRODUCT_IMAGES: Record<string, ProductImageMeta> = {
   'galaxy-s26': {
     src: '/assets/images/products/smartphones/samsung-galaxy-s26-ultra.jpg',
-    alt: 'Smartphone Android premium ilustrativo — estilo Samsung Galaxy',
+    alt: 'Samsung Galaxy S22 Ultra — módulo de câmeras, fotografia de produto',
     brand: 'Samsung',
+    caption: 'Referência: linha Galaxy Ultra',
   },
   'iphone-17': {
     src: '/assets/images/products/smartphones/apple-iphone-17-pro-max.jpg',
-    alt: 'Smartphone premium ilustrativo — estilo iPhone',
+    alt: 'iPhone 16 Pro titânio natural — fotografia de produto',
     brand: 'Apple',
+    caption: 'Referência: iPhone Pro titânio',
   },
   'nothing-3': {
     src: '/assets/images/products/smartphones/nothing-phone-3.jpg',
-    alt: 'Smartphone minimalista ilustrativo — estilo Nothing',
+    alt: 'Nothing Phone — Glyph Interface, design icônico',
     brand: 'Nothing',
+    caption: 'Referência: Nothing Phone Glyph',
   },
   'xiaomi-15': {
     src: '/assets/images/products/smartphones/xiaomi-15-ultra.jpg',
-    alt: 'Smartphone flagship Android ilustrativo — estilo Xiaomi',
+    alt: 'Flagship titanium — acabamento premium Android',
     brand: 'Xiaomi',
+    caption: 'Referência: flagship titanium',
   },
   'motorola-edge-50': {
     src: '/assets/images/products/smartphones/motorola-edge-50-pro.jpg',
-    alt: 'Smartphone moderno ilustrativo — estilo Motorola',
+    alt: 'Smartphone premium — product shot estúdio',
     brand: 'Motorola',
+    caption: 'Referência: design premium',
   },
   'point-one-pro': {
     src: '/assets/images/products/point-celular/point-one-pro-teaser.jpg',
-    alt: 'Teaser ilustrativo — futuro lançamento Point Celular Point One Pro',
+    alt: 'Design transparente com componentes visíveis — estética Point',
     brand: 'Point Celular',
     comingSoon: true,
+    caption: 'Teaser Point One Pro',
   },
   spigen: {
     src: '/assets/images/products/capas/spigen-ultra-hybrid.jpg',

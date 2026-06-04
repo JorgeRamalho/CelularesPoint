@@ -1,0 +1,202 @@
+/** Catálogo técnico aprofundado — flagships de alta tecnologia */
+
+export interface SmartphoneSpec {
+  label: string;
+  value: string;
+}
+
+export interface SmartphoneDeep {
+  id: string;
+  productKey: string;
+  tagline: string;
+  overview: string;
+  highlights: string[];
+  specs: SmartphoneSpec[];
+  camera: string;
+  display: string;
+  performance: string;
+  connectivity: string;
+  ecosystem: string;
+}
+
+export const SMARTPHONE_CATALOG: SmartphoneDeep[] = [
+  {
+    id: 'galaxy-s26',
+    productKey: 'Galaxy S26 Ultra',
+    tagline: 'O ápice da engenharia Galaxy — produtividade, S Pen e zoom espacial.',
+    overview:
+      'O Galaxy S26 Ultra representa a linha mais avançada da Samsung: corpo em titânio, S Pen integrada com latência de 2,8 ms, câmera de 200 MP com sensor ISOCELL e zoom óptico em cascata. Ideal para creators, executivos e power users que exigem multitarefa extrema no ecossistema Galaxy AI.',
+    highlights: [
+      'Galaxy AI: tradução em tempo real, Circle to Search e edição generativa',
+      'S Pen com 4.096 níveis de pressão — notas e desenho profissional',
+      'Zoom espacial 100x com estabilização AI',
+      'Tela Dynamic AMOLED 2X 6,8" — 1–120 Hz LTPO, pico 2.600 nits',
+      'Snapdragon 8 Elite for Galaxy · UFS 4.0 · Wi-Fi 7',
+    ],
+    specs: [
+      { label: 'Processador', value: 'Snapdragon 8 Elite for Galaxy' },
+      { label: 'RAM / Armazenamento', value: '12 GB · 512 GB (expansível microSD)' },
+      { label: 'Bateria', value: '5.000 mAh · 45W cabo · 25W wireless · 4,5W reverso' },
+      { label: 'Resistência', value: 'IP68 · Gorilla Glass Armor 2' },
+      { label: 'S Pen', value: 'Integrada · Bluetooth · Air Actions' },
+    ],
+    camera:
+      'Sistema quad-camera: 200 MP wide (OIS), 50 MP periscópio 5x, 50 MP ultrawide, 12 MP telefoto. Vídeo 8K@30fps, modo Astro, Expert RAW e codec LOG para pós-produção.',
+    display:
+      'Painel QHD+ curvo, Vision Booster, anti-reflexo, certificação SGS para conforto ocular e suporte a S Pen com precisão Wacom-level.',
+    performance:
+      'NPU dedicado para Galaxy AI on-device: resumo de documentos, transcrição de reuniões e assistente Bixby contextual sem depender só da nuvem.',
+    connectivity: '5G-Advanced · Wi-Fi 7 (320 MHz) · Bluetooth 5.4 · UWB · Samsung DeX',
+    ecosystem: 'Integração com Galaxy Watch, Buds, Tab e SmartThings. Knox Vault para dados corporativos.',
+  },
+  {
+    id: 'iphone-17',
+    productKey: 'iPhone 17 Pro Max',
+    tagline: 'Titânio, Apple Intelligence e o ecossistema mais integrado do mercado.',
+    overview:
+      'O iPhone 17 Pro Max consolida a experiência premium Apple: chassi em titânio grau 5, chip A19 Pro fabricado em 3 nm, botão Ação configurável e câmeras Pro com zoom tetraprism. Para quem vive no ecossistema iCloud, Mac e Apple Watch e prioriza privacidade com processamento on-device.',
+    highlights: [
+      'Apple Intelligence: Siri contextual, Clean Up, resumos e priorização de notificações',
+      'Chip A19 Pro — GPU com ray tracing acelerado por hardware',
+      'Câmera Fusion 48 MP + telefoto 5x tetraprism',
+      'Tela Super Retina XDR 6,9" — ProMotion 1–120 Hz',
+      'USB-C Thunderbolt · gravação ProRes externa',
+    ],
+    specs: [
+      { label: 'Processador', value: 'Apple A19 Pro (3 nm)' },
+      { label: 'RAM / Armazenamento', value: '8 GB · 256 GB a 1 TB NVMe' },
+      { label: 'Bateria', value: 'Até 33 h vídeo · MagSafe 25W · Qi2' },
+      { label: 'Resistência', value: 'IP68 · Ceramic Shield 2' },
+      { label: 'Material', value: 'Titânio natural, branco, preto e titânio deserto' },
+    ],
+    camera:
+      'Três sensores Pro: principal 48 MP, ultrawide 48 MP macro, telefoto 12 MP 5x. Photonic Engine, modo Retrato com bokeh adaptativo, vídeo espacial para Vision Pro e LOG para Final Cut.',
+    display:
+      'Always-On otimizado, brilho outdoor de 2.000 nits, True Tone e tecnologia anti-reflexo nano-texturizada nas variantes Pro.',
+    performance:
+      'Neural Engine de 16 núcleos para IA local: transcrição ao vivo, tradução em Mensagens e busca semântica em fotos e PDFs.',
+    connectivity: '5G mmWave/sub-6 · Wi-Fi 7 · Bluetooth 5.4 · Thread · satélite SOS',
+    ecosystem: 'Handoff, AirDrop, Continuity Camera, Apple Pay e integração total com watchOS e macOS.',
+  },
+  {
+    id: 'nothing-3',
+    productKey: 'Nothing Phone (3)',
+    tagline: 'Design transparente, Glyph Interface e Android puro com personalidade.',
+    overview:
+      'O Nothing Phone (3) redefine a estética mobile com traseira transparente e Glyph Interface — LEDs funcionais para notificações, timer, volume e interação com apps. Nothing OS sobre Android oferece launcher minimalista, widgets essenciais e atualizações rápidas para quem busca identidade visual única.',
+    highlights: [
+      'Glyph Interface 3.0 — 33 zonas LED programáveis',
+      'Design transparente com estrutura interna visível',
+      'Nothing OS 3.0 — Android 15, sem bloatware agressivo',
+      'Som stereo com tuning Dirac e perfil personalizado',
+      'Snapdragon 8 Gen 3 · tela LTPO 120 Hz',
+    ],
+    specs: [
+      { label: 'Processador', value: 'Snapdragon 8 Gen 3' },
+      { label: 'RAM / Armazenamento', value: '12 GB · 256 GB UFS 4.0' },
+      { label: 'Bateria', value: '5.000 mAh · 45W wired · 15W wireless' },
+      { label: 'Resistência', value: 'IP54 · Gorilla Glass 7i' },
+      { label: 'Áudio', value: 'Dual speakers · suporte LDAC' },
+    ],
+    camera:
+      'Dupla câmera 50 MP Sony LYTIA com OIS: sensor principal grande para baixa luz e ultrawide 114°. Modo Night, Portrait e vídeo 4K HDR com estabilização EIS avançada.',
+    display:
+      'OLED 6,7" FHD+ LTPO 1–120 Hz, bordas simétricas e taxa de amostragem touch 360 Hz para gaming casual.',
+    performance:
+      'Interface Glyph sincronizada com IoT Nothing e Ear — feedback visual para chamadas, Uber, Spotify e cronômetro de cozinha.',
+    connectivity: '5G dual-SIM · Wi-Fi 7 · Bluetooth 5.4 · NFC',
+    ecosystem: 'Integração Ear (a) / Ear (2) / CMF Watch Pro; comunidade Nothing com temas e packs Glyph.',
+  },
+  {
+    id: 'xiaomi-15',
+    productKey: 'Xiaomi 15 Ultra',
+    tagline: 'Engenharia Leica — fotografia de câmera profissional no bolso.',
+    overview:
+      'O Xiaomi 15 Ultra é o flagship fotográfico da Xiaomi com parceria Leica: sensor de 1" Sony LYT-900, lentes Summilux e pipeline de cor autêntica Leica Authentic/Lively. Para fotógrafos mobile, jornalistas visuais e entusiastas que priorizam hardware de câmera acima de tudo.',
+    highlights: [
+      'Sensor principal 1" — entrada de luz recorde em smartphone',
+      'Lentes Leica Summilux — revestimento anti-reflexo',
+      'Telefoto periscópio 200 MP — zoom 4,3x óptico, 10x lossless AI',
+      'Carregamento HyperCharge 90W · 80W wireless',
+      'Tela AMOLED 2K LTPO 120 Hz · pico 3.200 nits',
+    ],
+    specs: [
+      { label: 'Processador', value: 'Snapdragon 8 Elite' },
+      { label: 'RAM / Armazenamento', value: '16 GB · 512 GB UFS 4.0' },
+      { label: 'Bateria', value: '5.410 mAh · Si/C · 90W · 80W wireless' },
+      { label: 'Resistência', value: 'IP68 · Xiaomi Shield Glass 2.0' },
+      { label: 'Leica', value: 'Anel de filtro · capa fotográfica opcional' },
+    ],
+    camera:
+      'Três sensores Leica: 50 MP 1" wide, 50 MP periscópio, 50 MP ultrawide. Master Lens System, filtros Leica, 14-bit RAW DNG e perfil de cor aprovado por engenheiros ópticos da Leica.',
+    display:
+      'Painel C8 curvo, Dolby Vision, PWM 1920 Hz para conforto, calibração Delta E < 1 para referência de cor.',
+    performance:
+      'HyperOS 2 com IA: apagamento de objetos, extensão de frame em vídeo e renderização de retrato em tempo real via NPU.',
+    connectivity: '5G dual-SIM · Wi-Fi 7 · Bluetooth 5.4 · IR Blaster · eSIM',
+    ecosystem: 'Xiaomi Pad, Watch 2 Pro, Smart Band e casa inteligente Mi Home.',
+  },
+  {
+    id: 'motorola-edge-50',
+    productKey: 'Motorola Edge 50 Pro',
+    tagline: 'Design vegan leather, pOLED 144 Hz e experiência Motorola pura.',
+    overview:
+      'O Motorola Edge 50 Pro une acabamento premium em vegan leather ou bambu, tela pOLED de 144 Hz e interface near-stock com Moto AI. Excelente relação custo-flagship para quem quer tela fluida, carregamento TurboPower e câmeras versáteis sem pagar preço ultra-premium.',
+    highlights: [
+      'Tela pOLED 6,7" — 144 Hz · 2.000 nits HDR · 100% P3',
+      'Moto AI: resumo de notificações, assistente de câmera e tradução',
+      'Carregamento TurboPower 125W — 50% em 13 minutos',
+      'Acabamento vegan leather certificado · opção madeira',
+      'Câmera 50 MP LYTIA com OIS + ultrawide 125°',
+    ],
+    specs: [
+      { label: 'Processador', value: 'Snapdragon 7 Gen 3' },
+      { label: 'RAM / Armazenamento', value: '12 GB · 256 GB UFS 3.1' },
+      { label: 'Bateria', value: '4.500 mAh · 125W wired · 50W wireless' },
+      { label: 'Resistência', value: 'IP68 · Corning Gorilla Glass Victus' },
+      { label: 'Áudio', value: 'Stereo Dolby Atmos · 3,5 mm (mercados selecionados)' },
+    ],
+    camera:
+      'Tripla câmera: 50 MP principal OIS, 50 MP ultrawide macro, 10 MP telefoto 3x. Moto Secure para privacidade de fotos e integração com Adobe Scan.',
+    display:
+      'pOLED com HDR10+ e modo DC dimming para leitura noturna; Always-On com personalização Moto.',
+    performance:
+      'Hello UI baseada em Android 14: gestos Moto, Ready For (desktop mode) e clipboard sync com PC.',
+    connectivity: '5G · Wi-Fi 6E · Bluetooth 5.3 · NFC',
+    ecosystem: 'Moto Watch, Moto Buds e integração ThinkPhone para corporativo Lenovo/Motorola.',
+  },
+  {
+    id: 'point-one-pro',
+    productKey: 'Point One Pro',
+    tagline: 'O primeiro flagship da Point Celular — proteção, IA e ecossistema integrado.',
+    overview:
+      'O Point One Pro está em desenvolvimento como o smartphone assinatura da Point Celular: pensado para quem compra na loja e quer hardware otimizado para películas UV, capas magnéticas Point e suporte vitalício. Cadastre-se para early access e bundles exclusivos lançamento.',
+    highlights: [
+      'Ecossistema Point: capas, películas e assistência no mesmo lugar',
+      'IA Point para diagnóstico de bateria e recomendação de acessórios',
+      'Design futurista com proteção estrutural reforçada',
+      'Garantia estendida Point incluída no lançamento',
+      'Trade-in prioritário para clientes Point',
+    ],
+    specs: [
+      { label: 'Status', value: 'Pré-lançamento 2026' },
+      { label: 'Foco', value: 'Proteção total + performance equilibrada' },
+      { label: 'Ecossistema', value: 'Acessórios Point certificados' },
+      { label: 'Suporte', value: '24 h · assistência na loja' },
+      { label: 'Reserva', value: 'Lista VIP via formulário de contato' },
+    ],
+    camera: 'Módulo otimizado para películas de câmera Point — detalhes no lançamento.',
+    display: 'Painel flagship LTPO — especificação final em breve.',
+    performance: 'Chip de última geração com NPU para IA Point on-device.',
+    connectivity: '5G · Wi-Fi 7 · eSIM + dual SIM físico',
+    ecosystem: 'Integração total com Point Care, trade-in e instalação profissional na loja.',
+  },
+];
+
+export function getSmartphoneByProductKey(key: string): SmartphoneDeep | undefined {
+  return SMARTPHONE_CATALOG.find(s => s.productKey === key);
+}
+
+export function getSmartphoneById(id: string): SmartphoneDeep | undefined {
+  return SMARTPHONE_CATALOG.find(s => s.id === id);
+}

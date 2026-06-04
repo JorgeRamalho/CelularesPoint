@@ -38,7 +38,7 @@ export default function ProductImage({ product }: ProductImageProps) {
         decoding="async"
         onError={() => setFailed(true)}
       />
-      <span className="product-card__illus-label">Imagem ilustrativa</span>
+      <span className="product-card__illus-label">{image.caption ?? 'Foto de referência'}</span>
     </div>
   );
 }

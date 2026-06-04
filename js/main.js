@@ -250,29 +250,35 @@ function initProductModal() {
   const modalImageWrap = document.getElementById('modal-image-wrap');
   const modalImage = document.getElementById('modal-image');
   const modalIllus = document.getElementById('modal-illus');
-  const productBtns = document.querySelectorAll('.product-btn');
+  const modalContent = modal?.querySelector('.modal__content');
 
-  if (!modal) return;
+  if (!modal || !body) return;
 
   const openModal = productName => {
     const imageData = window.PRODUCT_IMAGES?.[productName];
+    const deep = window.SMARTPHONE_CATALOG?.find(p => p.productKey === productName);
+
     title.textContent = productName;
-    body.textContent = productDetails[productName] || 'Produto premium Point Celular. Entre em contato para mais informações.';
+    modalContent?.classList.toggle('modal__content--deep', Boolean(deep));
+
+    if (deep && typeof window.buildModalDeepHtml === 'function') {
+      body.innerHTML = window.buildModalDeepHtml(deep);
+    } else {
+      body.innerHTML = `<p>${productDetails[productName] || 'Produto premium Point Celular. Entre em contato para mais informações.'}</p>`;
+    }
 
     if (imageData && modalImageWrap && modalImage) {
       modalImage.src = imageData.src;
       modalImage.alt = imageData.alt;
-      modalIllus.textContent = `Imagem ilustrativa · ${imageData.brand}`;
+      modalIllus.textContent = imageData.caption
+        ? `${imageData.caption} · ${imageData.brand}`
+        : `Foto de referência · ${imageData.brand}`;
       modalImageWrap.hidden = false;
     } else if (modalImageWrap) {
       modalImageWrap.hidden = true;
     }
 
-    if (imageData?.comingSoon) {
-      actionBtn.textContent = 'Avise-me do lançamento';
-    } else {
-      actionBtn.textContent = 'Solicitar Orçamento';
-    }
+    actionBtn.textContent = imageData?.comingSoon ? 'Avise-me do lançamento' : 'Solicitar Orçamento';
 
     modal.classList.add('active');
     modal.setAttribute('aria-hidden', 'false');
@@ -285,8 +291,14 @@ function initProductModal() {
     document.body.style.overflow = '';
   };
 
-  productBtns.forEach(btn => {
-    btn.addEventListener('click', () => openModal(btn.dataset.product));
+  window.openProductModal = openModal;
+
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.product-btn');
+    if (btn?.dataset.product) {
+      e.preventDefault();
+      openModal(btn.dataset.product);
+    }
   });
 
   overlay?.addEventListener('click', closeModal);

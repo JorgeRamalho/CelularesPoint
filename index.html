@@ -42,6 +42,7 @@
         <li><a href="#hero" class="nav__link active">Início</a></li>
         <li><a href="#universo" class="nav__link">Universo</a></li>
         <li><a href="#produtos" class="nav__link">Produtos</a></li>
+        <li><a href="#flagships" class="nav__link">Flagships</a></li>
         <li><a href="#tecnologia" class="nav__link">Tecnologia</a></li>
         <li><a href="#servicos" class="nav__link">Serviços</a></li>
         <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
@@ -254,8 +255,7 @@
         </div>
 
         <p class="produtos__disclaimer" data-animate="fade-up">
-          Fotos meramente ilustrativas para referência visual. Não representam produtos oficiais das marcas.
-          Lançamentos <strong>Point Celular</strong> serão atualizados em <code>assets/images/products/point-celular/</code>.
+          Fotos de referência de produtos reais (Unsplash). Cada imagem representa visualmente a linha indicada — Samsung Galaxy Ultra, iPhone Pro, Nothing Glyph e demais flagships.
         </p>
 
         <div class="produtos__grid" id="produtos-grid">
@@ -268,7 +268,7 @@
             <div class="product-card__info">
               <span class="product-card__category">Smartphone</span>
               <h3>Galaxy S26 Ultra</h3>
-              <p>200MP · Snapdragon 8 Elite · 512GB · S Pen integrada</p>
+              <p>Galaxy AI · 200 MP · S Pen · Snapdragon 8 Elite · titânio</p>
               <div class="product-card__footer">
                 <span class="product-card__price">R$ 8.999</span>
                 <button class="btn btn--sm btn--primary product-btn" data-product="Galaxy S26 Ultra">Ver detalhes</button>
@@ -283,7 +283,7 @@
             <div class="product-card__info">
               <span class="product-card__category">Smartphone</span>
               <h3>iPhone 17 Pro Max</h3>
-              <p>A19 Pro · Câmera 48MP · Titânio · Apple Intelligence</p>
+              <p>A19 Pro · Apple Intelligence · titânio · zoom 5x · USB-C TB</p>
               <div class="product-card__footer">
                 <span class="product-card__price">R$ 11.499</span>
                 <button class="btn btn--sm btn--primary product-btn" data-product="iPhone 17 Pro Max">Ver detalhes</button>
@@ -298,7 +298,7 @@
             <div class="product-card__info">
               <span class="product-card__category">Smartphone</span>
               <h3>Nothing Phone (3)</h3>
-              <p>Glyph Interface · Snapdragon 8 · Design transparente</p>
+              <p>Glyph Interface 3.0 · Snapdragon 8 Gen 3 · design transparente</p>
               <div class="product-card__footer">
                 <span class="product-card__price">R$ 4.299</span>
                 <button class="btn btn--sm btn--primary product-btn" data-product="Nothing Phone (3)">Ver detalhes</button>
@@ -524,6 +524,21 @@
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- Flagship Lab — conteúdo técnico aprofundado -->
+    <section class="flagships section" id="flagships">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <span class="section__tag">◈ Flagship Lab</span>
+          <h2 class="section__title">Alta tecnologia<br><span class="gradient-text">em cada marca</span></h2>
+          <p class="section__desc">
+            Análise técnica dos flagships que definem o mercado: câmeras computacionais, IA on-device,
+            conectividade 5G-Advanced e ecossistemas integrados. Clique em qualquer modelo para ver especificações completas.
+          </p>
+        </header>
+        <div class="flagships__grid" id="flagships-grid"></div>
       </div>
     </section>
 
@@ -902,7 +917,7 @@
         <span class="modal__illus" id="modal-illus"></span>
       </div>
       <h3 id="modal-title">Detalhes do Produto</h3>
-      <p id="modal-body">Carregando informações...</p>
+      <div class="modal__body" id="modal-body">Carregando informações...</div>
       <button class="btn btn--primary" id="modal-action">Solicitar Orçamento</button>
     </div>
   </div>
@@ -911,6 +926,8 @@
   <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
 
   <script src="js/productImages.js" defer></script>
+  <script src="js/smartphoneCatalog.js" defer></script>
+  <script src="js/flagshipLab.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

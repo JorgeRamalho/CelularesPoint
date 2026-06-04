@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Brands from './components/Brands';
 import Universo from './components/Universo';
 import Products from './components/Products';
+import Flagships from './components/Flagships';
 import Tecnologia from './components/Tecnologia';
 import Servicos from './components/Servicos';
 import Depoimentos from './components/Depoimentos';
@@ -38,6 +39,7 @@ function App() {
         <Brands />
         <Universo />
         <Products onProductClick={handleProductClick} />
+        <Flagships onProductClick={handleProductClick} />
         <Tecnologia />
         <Servicos />
         <Depoimentos />

@@ -6,34 +6,40 @@
 const PRODUCT_IMAGES = {
   'Galaxy S26 Ultra': {
     src: 'assets/images/products/smartphones/samsung-galaxy-s26-ultra.jpg',
-    alt: 'Smartphone Android premium ilustrativo — estilo Samsung Galaxy',
+    alt: 'Samsung Galaxy S22 Ultra — fotografia de produto, módulo de câmeras',
     brand: 'Samsung',
+    caption: 'Referência visual: linha Galaxy Ultra',
   },
   'iPhone 17 Pro Max': {
     src: 'assets/images/products/smartphones/apple-iphone-17-pro-max.jpg',
-    alt: 'Smartphone premium ilustrativo — estilo iPhone',
+    alt: 'iPhone 16 Pro titânio natural — fotografia de produto Apple',
     brand: 'Apple',
+    caption: 'Referência visual: iPhone Pro titânio',
   },
   'Nothing Phone (3)': {
     src: 'assets/images/products/smartphones/nothing-phone-3.jpg',
-    alt: 'Smartphone minimalista ilustrativo — estilo Nothing',
+    alt: 'Nothing Phone com Glyph Interface — design transparente',
     brand: 'Nothing',
+    caption: 'Referência visual: Nothing Phone Glyph',
   },
   'Xiaomi 15 Ultra': {
     src: 'assets/images/products/smartphones/xiaomi-15-ultra.jpg',
-    alt: 'Smartphone flagship Android ilustrativo — estilo Xiaomi',
+    alt: 'Smartphone premium Android — acabamento titanium, estilo flagship',
     brand: 'Xiaomi',
+    caption: 'Referência visual: flagship titanium',
   },
   'Motorola Edge 50 Pro': {
     src: 'assets/images/products/smartphones/motorola-edge-50-pro.jpg',
-    alt: 'Smartphone moderno ilustrativo — estilo Motorola',
+    alt: 'Smartphone premium — fotografia de produto, acabamento moderno',
     brand: 'Motorola',
+    caption: 'Referência visual: design premium Motorola',
   },
   'Point One Pro': {
     src: 'assets/images/products/point-celular/point-one-pro-teaser.jpg',
-    alt: 'Teaser ilustrativo — futuro lançamento Point Celular',
+    alt: 'Nothing Phone — componentes visíveis, estética futurista Point',
     brand: 'Point Celular',
     comingSoon: true,
+    caption: 'Teaser linha Point Celular',
   },
   'Spigen Ultra Hybrid': {
     src: 'assets/images/products/capas/spigen-ultra-hybrid.jpg',
@@ -107,7 +113,7 @@ function buildProductImageHtml(data, isPhone = false) {
         onerror="this.hidden=true;this.parentElement.classList.add('product-card__image--fallback')"
       />
       <div class="product-card__placeholder" aria-hidden="true">📦</div>
-      <span class="product-card__illus-label">Imagem ilustrativa</span>`;
+      <span class="product-card__illus-label">${data.caption || 'Foto de referência'}</span>`;
 }
 
 function initProductImages() {
