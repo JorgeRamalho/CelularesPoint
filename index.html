@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Point Celular — Smartphones, acessórios premium, capas, carregadores rápidos e películas de proteção. Tecnologia de ponta com atendimento especializado.">
+  <meta name="keywords" content="celular, smartphone, capas, carregadores, película, acessórios, Point Celular">
+  <meta name="theme-color" content="#0a0e17">
+  <title>Point Celular | Tecnologia em Suas Mãos</title>
+
+  <!-- Tipografia futurista -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__ring"></div>
+    <span class="loader__text">POINT CELULAR</span>
+  </div>
+
+  <!-- Cursor glow (desktop) -->
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-icon">◈</span>
+        <span class="nav__logo-text">POINT<span class="accent">CELULAR</span></span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#hero" class="nav__link active">Início</a></li>
+        <li><a href="#universo" class="nav__link">Universo</a></li>
+        <li><a href="#produtos" class="nav__link">Produtos</a></li>
+        <li><a href="#tecnologia" class="nav__link">Tecnologia</a></li>
+        <li><a href="#servicos" class="nav__link">Serviços</a></li>
+        <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="#contato" class="nav__link nav__link--cta">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <div class="hero__badge" data-animate="fade-up">
+          <span class="pulse-dot"></span>
+          Nova era mobile · 2026
+        </div>
+
+        <h1 class="hero__title" data-animate="fade-up" data-delay="100">
+          O futuro cabe<br>
+          <span class="gradient-text">na palma da mão</span>
+        </h1>
+
+        <p class="hero__subtitle" data-animate="fade-up" data-delay="200">
+          Smartphones de última geração, capas inteligentes, carregadores GaN ultrarrápidos
+          e películas com nanotecnologia. Point Celular — onde inovação encontra proteção.
+        </p>
+
+        <div class="hero__actions" data-animate="fade-up" data-delay="300">
+          <a href="#produtos" class="btn btn--primary">
+            <span>Explorar Produtos</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contato" class="btn btn--ghost">Falar com Especialista</a>
+        </div>
+
+        <div class="hero__stats" data-animate="fade-up" data-delay="400">
+          <div class="stat">
+            <span class="stat__number" data-count="15000">0</span>
+            <span class="stat__label">Clientes ativos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="850">0</span>
+            <span class="stat__label">Produtos premium</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="98">0</span>
+            <span class="stat__suffix">%</span>
+            <span class="stat__label">Satisfação</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="24">0</span>
+            <span class="stat__suffix">h</span>
+            <span class="stat__label">Suporte técnico</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone mockup -->
+      <div class="hero__device" data-animate="fade-left" data-delay="500" aria-hidden="true">
+        <div class="device">
+          <div class="device__frame">
+            <div class="device__screen">
+              <div class="device__status">
+                <span>09:41</span>
+                <span>5G ●●●●</span>
+              </div>
+              <div class="device__app-grid">
+                <div class="device__app"></div>
+                <div class="device__app"></div>
+                <div class="device__app"></div>
+                <div class="device__app"></div>
+                <div class="device__app"></div>
+                <div class="device__app"></div>
+                <div class="device__app"></div>
+                <div class="device__app"></div>
+              </div>
+              <div class="device__widget">
+                <span class="device__widget-label">Point Celular</span>
+                <span class="device__widget-value">Proteção Total ✓</span>
+              </div>
+            </div>
+          </div>
+          <div class="device__glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marcas parceiras -->
+    <section class="brands" aria-label="Marcas parceiras">
+      <div class="container">
+        <p class="brands__label">Marcas que movem o futuro</p>
+        <div class="brands__track">
+          <div class="brands__slider">
+            <span>Samsung</span><span>Apple</span><span>Xiaomi</span><span>Motorola</span>
+            <span>Realme</span><span>Nothing</span><span>Anker</span><span>Spigen</span>
+            <span>Baseus</span><span>UAG</span><span>Belkin</span><span>Pitaka</span>
+            <!-- duplicate for infinite scroll -->
+            <span>Samsung</span><span>Apple</span><span>Xiaomi</span><span>Motorola</span>
+            <span>Realme</span><span>Nothing</span><span>Anker</span><span>Spigen</span>
+            <span>Baseus</span><span>UAG</span><span>Belkin</span><span>Pitaka</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Universo Mobile -->
+    <section class="universo section" id="universo">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <span class="section__tag">◈ Universo Mobile</span>
+          <h2 class="section__title">Ecossistema completo<br><span class="gradient-text">de conectividade</span></h2>
+          <p class="section__desc">
+            O mundo mobile evolui em velocidade quântica. Processadores de 3nm, redes 5G-Advanced,
+            Wi-Fi 7, carregamento sem fio de 50W e displays LTPO de 120Hz. Na Point Celular,
+            você não compra apenas um aparelho — você entra em um ecossistema inteligente.
+          </p>
+        </header>
+
+        <div class="universo__grid">
+          <article class="card card--feature" data-animate="fade-up" data-delay="0">
+            <div class="card__icon">📡</div>
+            <h3>Conectividade 5G-Advanced</h3>
+            <p>Latência ultra-baixa, banda larga móvel e preparação para redes 6G. Seu smartphone sempre à frente da curva.</p>
+            <ul class="card__list">
+              <li>Download até 10 Gbps</li>
+              <li>Network slicing</li>
+              <li>IoT integrado</li>
+            </ul>
+          </article>
+
+          <article class="card card--feature" data-animate="fade-up" data-delay="100">
+            <div class="card__icon">🔋</div>
+            <h3>Energia Inteligente</h3>
+            <p>Carregadores GaN, power banks magnéticos e cabos USB-C 240W. Energia eficiente, compacta e segura.</p>
+            <ul class="card__list">
+              <li>GaN III Technology</li>
+              <li>MagSafe & Qi2</li>
+              <li>Proteção térmica</li>
+            </ul>
+          </article>
+
+          <article class="card card--feature" data-animate="fade-up" data-delay="200">
+            <div class="card__icon">🛡️</div>
+            <h3>Proteção Avançada</h3>
+            <p>Capas de materiais aeroespaciais, películas de vidro temperado 9H e nano-coating hidrofóbico.</p>
+            <ul class="card__list">
+              <li>Gorilla Glass Victus 2</li>
+              <li>Anti-impacto MIL-STD</li>
+              <li>Privacidade 360°</li>
+            </ul>
+          </article>
+
+          <article class="card card--feature" data-animate="fade-up" data-delay="300">
+            <div class="card__icon">🤖</div>
+            <h3>IA On-Device</h3>
+            <p>NPUs dedicados processam inteligência artificial localmente: fotos, tradução, assistentes e automação.</p>
+            <ul class="card__list">
+              <li>Gemini Nano</li>
+              <li>Apple Intelligence</li>
+              <li>Galaxy AI</li>
+            </ul>
+          </article>
+
+          <article class="card card--feature" data-animate="fade-up" data-delay="400">
+            <div class="card__icon">📸</div>
+            <h3>Fotografia Computacional</h3>
+            <p>Sensores de 200MP, estabilização óptica avançada e zoom periscópico. Cada clique é uma obra-prima.</p>
+            <ul class="card__list">
+              <li>RAW computacional</li>
+              <li>Night Mode Pro</li>
+              <li>Vídeo 8K HDR</li>
+            </ul>
+          </article>
+
+          <article class="card card--feature" data-animate="fade-up" data-delay="500">
+            <div class="card__icon">♻️</div>
+            <h3>Sustentabilidade Tech</h3>
+            <p>Programa de trade-in, reciclagem de eletrônicos e acessórios de materiais reciclados e biodegradáveis.</p>
+            <ul class="card__list">
+              <li>Trade-in garantido</li>
+              <li>Embalagem zero waste</li>
+              <li>Reparo sustentável</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="produtos section" id="produtos">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <span class="section__tag">◈ Catálogo Premium</span>
+          <h2 class="section__title">Produtos que definem<br><span class="gradient-text">o padrão mobile</span></h2>
+        </header>
+
+        <!-- Filtros -->
+        <div class="produtos__filters" data-animate="fade-up" role="tablist" aria-label="Filtrar produtos">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="filter-btn" data-filter="smartphones" role="tab">Smartphones</button>
+          <button class="filter-btn" data-filter="capas" role="tab">Capas</button>
+          <button class="filter-btn" data-filter="carregadores" role="tab">Carregadores</button>
+          <button class="filter-btn" data-filter="peliculas" role="tab">Películas</button>
+          <button class="filter-btn" data-filter="audio" role="tab">Áudio</button>
+        </div>
+
+        <div class="produtos__grid" id="produtos-grid">
+          <!-- Smartphones -->
+          <article class="product-card" data-category="smartphones" data-animate="fade-up">
+            <div class="product-card__badge">Lançamento</div>
+            <div class="product-card__image product-card__image--phone">
+              <div class="product-card__placeholder">📱</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Smartphone</span>
+              <h3>Galaxy S26 Ultra</h3>
+              <p>200MP · Snapdragon 8 Elite · 512GB · S Pen integrada</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 8.999</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Galaxy S26 Ultra">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="smartphones" data-animate="fade-up">
+            <div class="product-card__image product-card__image--phone">
+              <div class="product-card__placeholder">📱</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Smartphone</span>
+              <h3>iPhone 17 Pro Max</h3>
+              <p>A19 Pro · Câmera 48MP · Titânio · Apple Intelligence</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 11.499</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="iPhone 17 Pro Max">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="smartphones" data-animate="fade-up">
+            <div class="product-card__image product-card__image--phone">
+              <div class="product-card__placeholder">📱</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Smartphone</span>
+              <h3>Nothing Phone (3)</h3>
+              <p>Glyph Interface · Snapdragon 8 · Design transparente</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 4.299</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Nothing Phone (3)">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Capas -->
+          <article class="product-card" data-category="capas" data-animate="fade-up">
+            <div class="product-card__badge product-card__badge--hot">Best Seller</div>
+            <div class="product-card__image">
+              <div class="product-card__placeholder">🛡️</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Capa Premium</span>
+              <h3>Spigen Ultra Hybrid MagFit</h3>
+              <p>Anti-amarelecimento · MagSafe · MIL-STD 810G</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 189</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Spigen Ultra Hybrid">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="capas" data-animate="fade-up">
+            <div class="product-card__image">
+              <div class="product-card__placeholder">🛡️</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Capa Premium</span>
+              <h3>Pitaka Aramid Fiber Case</h3>
+              <p>Fibra de aramida · 0.8mm · 17g · MagSafe</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 449</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Pitaka Aramid">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="capas" data-animate="fade-up">
+            <div class="product-card__image">
+              <div class="product-card__placeholder">🛡️</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Capa Premium</span>
+              <h3>UAG Monarch Pro</h3>
+              <p>Proteção extrema · Kevlar · Wireless charging</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 379</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="UAG Monarch Pro">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Carregadores -->
+          <article class="product-card" data-category="carregadores" data-animate="fade-up">
+            <div class="product-card__badge product-card__badge--hot">GaN III</div>
+            <div class="product-card__image">
+              <div class="product-card__placeholder">⚡</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Carregador</span>
+              <h3>Anker 735 GaNPrime 65W</h3>
+              <p>3 portas · USB-C PD 3.1 · Compacto 38% menor</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 299</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Anker 735 GaNPrime">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="carregadores" data-animate="fade-up">
+            <div class="product-card__image">
+              <div class="product-card__placeholder">⚡</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Carregador</span>
+              <h3>Baseus MagSafe 15W Stand</h3>
+              <p>Qi2 certificado · Stand ajustável · LED indicador</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 219</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Baseus MagSafe Stand">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="carregadores" data-animate="fade-up">
+            <div class="product-card__image">
+              <div class="product-card__placeholder">⚡</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Power Bank</span>
+              <h3>Anker MagGo 10000mAh</h3>
+              <p>Qi2 15W · USB-C 30W · Display digital</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 449</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Anker MagGo 10000">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Películas -->
+          <article class="product-card" data-category="peliculas" data-animate="fade-up">
+            <div class="product-card__image">
+              <div class="product-card__placeholder">🔲</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Película</span>
+              <h3>Whitestone Dome Glass</h3>
+              <p>UV curing · Cobertura total · 9H · Oleofóbico</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 159</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Whitestone Dome">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="peliculas" data-animate="fade-up">
+            <div class="product-card__badge">Privacidade</div>
+            <div class="product-card__image">
+              <div class="product-card__placeholder">🔲</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Película</span>
+              <h3>ESR Privacy Screen Pro</h3>
+              <p>Anti-espionagem 28° · Instalação automática</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 129</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="ESR Privacy Pro">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="peliculas" data-animate="fade-up">
+            <div class="product-card__image">
+              <div class="product-card__placeholder">🔲</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Película</span>
+              <h3>Belkin UltraGlass 2</h3>
+              <p>Gorilla Glass · Anti-microbial · 2x resistência</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 199</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Belkin UltraGlass 2">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Áudio -->
+          <article class="product-card" data-category="audio" data-animate="fade-up">
+            <div class="product-card__image">
+              <div class="product-card__placeholder">🎧</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Áudio</span>
+              <h3>Samsung Galaxy Buds3 Pro</h3>
+              <p>ANC adaptativo · Hi-Fi 24bit · IP57</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 1.299</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="Galaxy Buds3 Pro">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="audio" data-animate="fade-up">
+            <div class="product-card__image">
+              <div class="product-card__placeholder">🎧</div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Áudio</span>
+              <h3>AirPods Pro 3</h3>
+              <p>ANC 2x · USB-C · Spatial Audio · H2 chip</p>
+              <div class="product-card__footer">
+                <span class="product-card__price">R$ 2.499</span>
+                <button class="btn btn--sm btn--primary product-btn" data-product="AirPods Pro 3">Ver detalhes</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecnologia / Specs -->
+    <section class="tecnologia section" id="tecnologia">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <span class="section__tag">◈ Specs Lab</span>
+          <h2 class="section__title">Engenharia de<br><span class="gradient-text">precisão mobile</span></h2>
+        </header>
+
+        <div class="specs__layout">
+          <div class="specs__visual" data-animate="fade-right">
+            <div class="specs__chip">
+              <div class="specs__chip-inner">
+                <span class="specs__chip-label">NPU</span>
+                <span class="specs__chip-value">45 TOPS</span>
+              </div>
+              <div class="specs__chip-ring"></div>
+              <div class="specs__chip-ring specs__chip-ring--2"></div>
+            </div>
+          </div>
+
+          <div class="specs__list" data-animate="fade-left">
+            <div class="spec-item">
+              <div class="spec-item__bar" data-width="95"></div>
+              <div class="spec-item__info">
+                <span>Performance CPU</span>
+                <span>95%</span>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__bar" data-width="88"></div>
+              <div class="spec-item__info">
+                <span>Eficiência Energética</span>
+                <span>88%</span>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__bar" data-width="92"></div>
+              <div class="spec-item__info">
+                <span>Qualidade de Câmera</span>
+                <span>92%</span>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__bar" data-width="97"></div>
+              <div class="spec-item__info">
+                <span>Velocidade 5G</span>
+                <span>97%</span>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-item__bar" data-width="90"></div>
+              <div class="spec-item__info">
+                <span>Durabilidade</span>
+                <span>90%</span>
+              </div>
+            </div>
+
+            <div class="specs__tech-grid">
+              <div class="specs__tech-item">
+                <code>USB-C</code>
+                <span>PD 3.1 · 240W</span>
+              </div>
+              <div class="specs__tech-item">
+                <code>Wi-Fi 7</code>
+                <span>BE · 320MHz</span>
+              </div>
+              <div class="specs__tech-item">
+                <code>Bluetooth</code>
+                <span>5.4 LE Audio</span>
+              </div>
+              <div class="specs__tech-item">
+                <code>Display</code>
+                <span>LTPO · 1-120Hz</span>
+              </div>
+              <div class="specs__tech-item">
+                <code>RAM</code>
+                <span>LPDDR5X · 16GB</span>
+              </div>
+              <div class="specs__tech-item">
+                <code>Storage</code>
+                <span>UFS 4.0 · 1TB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="servicos section" id="servicos">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <span class="section__tag">◈ Point Services</span>
+          <h2 class="section__title">Serviços que elevam<br><span class="gradient-text">sua experiência</span></h2>
+        </header>
+
+        <div class="servicos__grid">
+          <article class="service-card" data-animate="fade-up">
+            <div class="service-card__number">01</div>
+            <h3>Instalação Profissional</h3>
+            <p>Aplicação de películas com tecnologia UV e alinhamento a laser. Zero bolhas, cobertura perfeita.</p>
+          </article>
+          <article class="service-card" data-animate="fade-up" data-delay="100">
+            <div class="service-card__number">02</div>
+            <h3>Assistência Técnica</h3>
+            <p>Troca de tela, bateria e componentes originais. Diagnóstico gratuito em 15 minutos.</p>
+          </article>
+          <article class="service-card" data-animate="fade-up" data-delay="200">
+            <div class="service-card__number">03</div>
+            <h3>Trade-In Program</h3>
+            <p>Troque seu aparelho usado por crédito na compra de um novo. Avaliação justa e instantânea.</p>
+          </article>
+          <article class="service-card" data-animate="fade-up" data-delay="300">
+            <div class="service-card__number">04</div>
+            <h3>Consultoria Tech</h3>
+            <p>Especialistas ajudam a escolher o smartphone ideal para seu perfil: gamer, creator ou business.</p>
+          </article>
+          <article class="service-card" data-animate="fade-up" data-delay="400">
+            <div class="service-card__number">05</div>
+            <h3>Entrega Express</h3>
+            <p>Receba em até 2h na região metropolitana. Rastreamento em tempo real via app.</p>
+          </article>
+          <article class="service-card" data-animate="fade-up" data-delay="500">
+            <div class="service-card__number">06</div>
+            <h3>Garantia Estendida</h3>
+            <p>Proteção adicional de até 24 meses. Cobertura contra quedas, líquidos e defeitos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos section" id="depoimentos">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <span class="section__tag">◈ Comunidade Point</span>
+          <h2 class="section__title">Quem usa,<br><span class="gradient-text">recomenda</span></h2>
+        </header>
+
+        <div class="depoimentos__slider" id="testimonials-slider">
+          <div class="depoimentos__track" id="testimonials-track">
+            <blockquote class="testimonial">
+              <div class="testimonial__stars">★★★★★</div>
+              <p>"Comprei meu S26 Ultra e a capa Pitaka aqui. Atendimento impecável e instalação da película perfeita. Melhor loja de tech da região!"</p>
+              <footer>
+                <strong>Lucas Mendes</strong>
+                <span>Creator · São Paulo</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <div class="testimonial__stars">★★★★★</div>
+              <p>"O carregador GaN da Anker carrega meu MacBook e iPhone ao mesmo tempo. A equipe da Point explicou tudo com paciência. Nota 10!"</p>
+              <footer>
+                <strong>Mariana Costa</strong>
+                <span>Designer · Rio de Janeiro</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <div class="testimonial__stars">★★★★★</div>
+              <p>"Troquei meu iPhone 14 pelo 17 Pro Max no trade-in. Avaliação justa e processo super rápido. Já indiquei para toda a família."</p>
+              <footer>
+                <strong>Rafael Oliveira</strong>
+                <span>Empresário · Belo Horizonte</span>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <div class="testimonial__stars">★★★★★</div>
+              <p>"Assistência técnica salvou meu celular depois de uma queda. Troca de tela original em 1 hora. Profissionais de verdade."</p>
+              <footer>
+                <strong>Camila Santos</strong>
+                <span>Médica · Curitiba</span>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="depoimentos__controls">
+            <button class="slider-btn" id="prev-testimonial" aria-label="Depoimento anterior">←</button>
+            <div class="depoimentos__dots" id="testimonials-dots"></div>
+            <button class="slider-btn" id="next-testimonial" aria-label="Próximo depoimento">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <header class="section__header" data-animate="fade-up">
+          <span class="section__tag">◈ FAQ</span>
+          <h2 class="section__title">Perguntas<br><span class="gradient-text">frequentes</span></h2>
+        </header>
+
+        <div class="faq__list" data-animate="fade-up">
+          <details class="faq__item">
+            <summary>Qual a diferença entre película de vidro temperado e nano-coating?</summary>
+            <p>O vidro temperado 9H oferece proteção física contra impactos e arranhões. O nano-coating é uma camada líquida invisível que repele água, oleosidade e reduz impressões digitais. Na Point Celular, recomendamos a combinação de ambos para proteção máxima.</p>
+          </details>
+          <details class="faq__item">
+            <summary>O que é carregador GaN e por que é melhor?</summary>
+            <p>GaN (Nitreto de Galio) substitui o silício tradicional, permitindo carregadores menores, mais leves e eficientes. Dissipam menos calor e entregam potência de 65W a 240W sem superaquecimento. Ideal para notebooks, tablets e smartphones simultaneamente.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Capas MagSafe funcionam com Android?</summary>
+            <p>MagSafe é exclusivo Apple, mas marcas como Spigen, ESR e Baseus oferecem capas magnéticas compatíveis com padrão Qi2 para Samsung, Google Pixel e outros. Nossa equipe indica o modelo ideal para seu aparelho.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Como funciona o programa Trade-In?</summary>
+            <p>Traga seu smartphone usado para avaliação gratuita. Verificamos estado, bateria e funcionalidades. O valor é aplicado como desconto imediato na compra de um aparelho novo. Aceitamos iPhones, Galaxies, Xiaomis e mais.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Vocês vendem produtos originais?</summary>
+            <p>Sim. Trabalhamos exclusivamente com produtos originais e acessórios premium certificados de marcas autorizadas. Todos os smartphones possuem nota fiscal e garantia oficial do fabricante.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Qual o prazo de entrega?</summary>
+            <p>Capital e região metropolitana: entrega expressa em até 2 horas. Interior: 1-3 dias úteis via transportadora. Todo pedido inclui rastreamento em tempo real.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato section" id="contato">
+      <div class="container">
+        <div class="contato__layout">
+          <div class="contato__info" data-animate="fade-right">
+            <span class="section__tag">◈ Contato</span>
+            <h2 class="section__title">Pronto para o<br><span class="gradient-text">próximo nível?</span></h2>
+            <p>Fale com nossos especialistas em tecnologia mobile. Resposta em até 30 minutos.</p>
+
+            <ul class="contato__details">
+              <li>
+                <span class="contato__icon">📍</span>
+                <div>
+                  <strong>Endereço</strong>
+                  <span>Av. Paulista, 1000 — São Paulo, SP</span>
+                </div>
+              </li>
+              <li>
+                <span class="contato__icon">📞</span>
+                <div>
+                  <strong>Telefone / WhatsApp</strong>
+                  <span>(11) 99999-0000</span>
+                </div>
+              </li>
+              <li>
+                <span class="contato__icon">✉️</span>
+                <div>
+                  <strong>E-mail</strong>
+                  <span>contato@pointcelular.com.br</span>
+                </div>
+              </li>
+              <li>
+                <span class="contato__icon">🕐</span>
+                <div>
+                  <strong>Horário</strong>
+                  <span>Seg–Sáb: 9h às 21h · Dom: 10h às 18h</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contato__form" id="contact-form" data-animate="fade-left" novalidate>
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione...</option>
+                <option value="smartphone">Compra de Smartphone</option>
+                <option value="acessorios">Acessórios e Proteção</option>
+                <option value="assistencia">Assistência Técnica</option>
+                <option value="tradein">Trade-In</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Como podemos ajudar?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Enviar Mensagem</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__logo">
+            <span class="nav__logo-icon">◈</span>
+            <span class="nav__logo-text">POINT<span class="accent">CELULAR</span></span>
+          </a>
+          <p>Tecnologia mobile de ponta. Smartphones, acessórios premium e serviços especializados desde 2018.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="YouTube">YT</a>
+            <a href="#" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h4>Produtos</h4>
+          <ul>
+            <li><a href="#produtos">Smartphones</a></li>
+            <li><a href="#produtos">Capas & Cases</a></li>
+            <li><a href="#produtos">Carregadores</a></li>
+            <li><a href="#produtos">Películas</a></li>
+            <li><a href="#produtos">Áudio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#servicos">Instalação</a></li>
+            <li><a href="#servicos">Assistência</a></li>
+            <li><a href="#servicos">Trade-In</a></li>
+            <li><a href="#servicos">Consultoria</a></li>
+            <li><a href="#servicos">Garantia</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#universo">Sobre nós</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="react-app/index.html">Versão React →</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Point Celular. Todos os direitos reservados.</p>
+        <p class="footer__tech">HTML · CSS · JavaScript · React · TypeScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal produto -->
+  <div class="modal" id="product-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal__overlay" id="modal-overlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modal-close" aria-label="Fechar">&times;</button>
+      <h3 id="modal-title">Detalhes do Produto</h3>
+      <p id="modal-body">Carregando informações...</p>
+      <button class="btn btn--primary" id="modal-action">Solicitar Orçamento</button>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
