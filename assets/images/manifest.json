@@ -82,30 +82,6 @@
       "alt": "Capa rugged ilustrativa"
     },
     {
-      "id": "anker-735",
-      "slug": "anker-ganprime-65w",
-      "brand": "Anker",
-      "category": "carregadores",
-      "image": "assets/images/products/carregadores/anker-ganprime-65w.jpg",
-      "alt": "Carregador GaN compacto ilustrativo"
-    },
-    {
-      "id": "baseus",
-      "slug": "baseus-magsafe-stand",
-      "brand": "Baseus",
-      "category": "carregadores",
-      "image": "assets/images/products/carregadores/baseus-magsafe-stand.jpg",
-      "alt": "Base de carregamento wireless ilustrativa"
-    },
-    {
-      "id": "anker-maggo",
-      "slug": "anker-maggo-10000",
-      "brand": "Anker",
-      "category": "carregadores",
-      "image": "assets/images/products/carregadores/anker-maggo-10000.jpg",
-      "alt": "Power bank ilustrativo"
-    },
-    {
       "id": "whitestone",
       "slug": "whitestone-dome",
       "brand": "Whitestone",

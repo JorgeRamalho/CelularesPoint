@@ -2,7 +2,6 @@ export type ProductCategory =
   | 'all'
   | 'smartphones'
   | 'capas'
-  | 'carregadores'
   | 'peliculas'
   | 'audio';
 

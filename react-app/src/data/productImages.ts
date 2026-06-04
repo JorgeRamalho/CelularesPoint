@@ -60,21 +60,6 @@ export const PRODUCT_IMAGES: Record<string, ProductImageMeta> = {
     alt: 'Capa rugged de proteção ilustrativa',
     brand: 'UAG',
   },
-  'anker-735': {
-    src: '/assets/images/products/carregadores/anker-ganprime-65w.jpg',
-    alt: 'Carregador GaN compacto ilustrativo',
-    brand: 'Anker',
-  },
-  baseus: {
-    src: '/assets/images/products/carregadores/baseus-magsafe-stand.jpg',
-    alt: 'Base de carregamento wireless ilustrativa',
-    brand: 'Baseus',
-  },
-  'anker-maggo': {
-    src: '/assets/images/products/carregadores/anker-maggo-10000.jpg',
-    alt: 'Power bank magnético ilustrativo',
-    brand: 'Anker',
-  },
   whitestone: {
     src: '/assets/images/products/peliculas/whitestone-dome.jpg',
     alt: 'Película de vidro temperado ilustrativa',
