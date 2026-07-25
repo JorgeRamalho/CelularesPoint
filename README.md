@@ -1,10 +1,9 @@
 📌 ## Celulares Point 📲 - A tecnologia na palma da sua mão  
 
-🌐 ## Website Link do projeto online 
-https://celulares-point.vercel.app/
+🌐 ## Website Link do projeto online https://celulares-point.vercel.app/
 
 📂 ## Repositório
-https://github.com//JorgeRamalho/CelularesPoint
+https://github.com//JorgeRamalho/CelularesPoint.git
 
 💻 ## Tecnologias
 Html Css JavaScript React Typescript Node.js 
